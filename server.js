@@ -13,9 +13,10 @@ const morgan = require("morgan")
 
 // Import Controllers
 const authController = require('./controllers/auth.js')
+const usersController = require('./controllers/users.js')
 const liftsController = require('./controllers/lifts.js')
 const workoutsController = require('./controllers/workouts.js')
-const activitiessController = require('./controllers/activities.js')
+// const activitiessController = require('./controllers/activities.js')
 
 // Set up the app and connect to the DB
 const port = process.env.PORT ? process.env.PORT : "3000"
@@ -49,7 +50,7 @@ app.use(isSignedIn)
 app.use('/users', usersController)
 app.use('/users/:userId/lifts', liftsController)
 app.use('/workouts', workoutsController)
-app.use('/workouts/activities', activitiesController)
+// app.use('/workouts/activities', activitiesController)
 
 
 // Home page Index

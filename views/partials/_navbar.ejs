@@ -1,10 +1,10 @@
 <nav>
     <a href="/">Home</a>
     <% if(user) { %>
-      <a href="/users/<%=user._id%>/lifts">View my lifts</a>
-      <a href="/workouts">View Workouts</a>
-      <a href="/auth/sign-out">Sign Out</a>
+    <a href="/workouts">Workouts</a>
+      <a href="/users/<%=user._id%>/lifts">My lifts</a>
       <a href="/users/">Explore Our Community</a>
+      <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>
       <a href="/auth/sign-in">Sign In</a>
       <a href="/auth/sign-up">Sign Up</a>

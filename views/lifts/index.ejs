@@ -1,0 +1,20 @@
+<%- include('../partials/_header.ejs') %>
+<h1>Welcome to my lifts</h1>
+<main>
+    <% if ((user.lifts) && (user.lifts.length > 0)) { %>
+    <ul>
+    <% for( let each of user.lifts ) { %>
+        <li>
+            <a href="/lifts/<%= each._id %>"><%= each.name %></a>
+        </li>
+        <br>
+        <br>
+    <% } %>
+    </ul>
+    <% } else { %>
+    <h3>Do you even lift bro?</h3>
+    <% } %>
+<a href="/users/<%= user._id %>/lifts/new">Add a new lift</a>
+
+</main>
+</body>

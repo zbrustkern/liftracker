@@ -1,0 +1,23 @@
+<%- include('../partials/_header.ejs') %>
+
+<h1>Record a lift!</h1>
+<h2>You only need one number to get a computed training max but you can store all of them if available!</h2>
+
+<main>
+<form action="/users/:userId/lifts" method="POST">
+    <label for="name">Lift: </label>
+    <input type="text" name="name" id="name" />
+    <br>
+    <label for="one-rep-max">One Rep Max:</label>
+    <input type="number" name="oneRepMax" id="one-rep-max">
+    <br>
+    <label for="three-rep-max">Three Rep Max:</label>
+    <input type="number" name="threeRepMax" id="three-rep-max">
+    <br>
+    <label for="five-rep-max">Five Rep Max:</label>
+    <input type="number" name="fiveRepMax" id="five-rep-max">
+    <br>
+    <button type="submit">Add Lift</button>
+
+</form>
+</main>

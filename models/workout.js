@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const Activity = require('/activity.js')
 
 const activitySchema = new mongoose.Schema({
     name: {

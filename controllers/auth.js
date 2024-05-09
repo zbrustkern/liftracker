@@ -5,16 +5,19 @@ const bcrypt = require('bcrypt')
 const User = require('../models/user.js')
 
 router.get('/sign-up', (req, res) => {
-  res.render('auth/sign-up.ejs')
+    res.locals.title = "Sign Up"
+    res.render('auth/sign-up.ejs')
 });
 
 router.get('/sign-in', (req, res) => {
-  res.render('auth/sign-in.ejs')
+    res.locals.title = "Sign In"
+    res.render('auth/sign-in.ejs');
 });
 
 router.get('/sign-out', (req, res) => {
-  req.session.destroy()
-  res.redirect('/')
+    res.locals.title = "Welcome to LifTracker"
+    req.session.destroy()
+    res.redirect('/')
 });
 
 router.post('/sign-up', async (req, res) => {
@@ -35,6 +38,7 @@ router.post('/sign-up', async (req, res) => {
     req.body.password = hashedPassword
   
     await User.create(req.body)
+    res.locals.title = "Sign In"
     res.redirect('/auth/sign-in')
   } catch (error) {
     console.log(error)
