@@ -1,21 +1,18 @@
 <%- include('../partials/_header.ejs') %>
 
-<h1>Cool lift, bro!</h1>
-    Lift: <%= lift.name %><br>
-    One Rep Max: <%= lift.oneRepMax %><br>
-    Three Rep Max: <%= lift.threeRepMax %><br>
-    Five Rep max: <%= lift.fiveRepMax %><br>
+<div class="lift-display">
+    <h2>Lift: <%= lift.name %></h2>
+    <p>One Rep Max: <%= lift.oneRepMax %></p>
+    <p>Three Rep Max: <%= lift.threeRepMax %></p>
+    <p>Five Rep Max: <%= lift.fiveRepMax %></p>
+</div>
 
-    <!-- Delete Button wrapped in a form to send a delete request -->
-    <form action="/users/<%=currentUser._id %>/lifts/<%= lift._id %>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
-    </form>
-    <br>
+<a href="/users/<%= currentUser._id %>/lifts/<%= lift._id %>/edit"><button>Edit</button></a>
+<form action="/users/<%=currentUser._id %>/lifts/<%= lift._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete</button>
+</form>
+<a href="/users/<%= currentUser.id %>/lifts"><button>Back to my lifts</button></a>
 
-    <a href="/users/<%= currentUser._id %>/lifts/<%= lift._id %>/edit">Edit</a>
-    <br>
-    <a href="/users/<%= currentUser.id %>/lifts">Back to my lifts</a>
-
-
+</main>
 </body>
 </html>

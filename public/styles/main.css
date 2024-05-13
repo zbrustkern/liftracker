@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a:link {
+        color: steelblue;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: steelblue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:red
+    }
+}
+body {
+    background: url(../assets/background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin: 2rem 0 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    width: 75vw;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: steelblue;
+
+    a:link {
+        color: steelblue;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: steelblue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:red;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+form {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+.activity-builder {
+    border: 3px solid steelblue;
+    backdrop-filter: blur(1em);
+    border-radius: 1rem;
+    padding: .5rem;
+    padding-bottom: 0;
+    margin: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lift-display {
+    border: 3px solid steelblue;
+    backdrop-filter: blur(1em);
+    border-radius: 1rem;
+    padding: .5rem;
+    padding-bottom: 0;
+    margin: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    margin: 10px 4px 4px 4px;
+    background-color: #3f6a51;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    width: 15em;
+  
+  &:hover {
+    background-color: #597dff;
+  }
+}
+
+.logo-image {
+    width: 99%;
+    border-radius: 1rem;
+}
+
+.page-title {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    width: 75vw;
+    margin: 0 auto;
+    border-radius: 1rem;
+    h1 {
+      color: steelblue;  
+    }
+}
+
+.index-content {
+    text-align: center;
+}
+
+#home-logo {
+    height: 2em;
+}

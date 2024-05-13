@@ -1,0 +1,16 @@
+<%- include('../partials/_header.ejs') %>
+
+<% if (workouts.length > 0) { %>
+    <ul>
+        <% workouts.forEach((workout)=> { %>
+        <li>
+        <%= workout.name %>
+        </li>
+        <% }) %>
+    </ul>
+    <% } else { %>
+        <h3><%= otherUser.name %> doesn't have any workouts yet!</h3>
+        <% } %>
+</main>
+</body>
+</html>

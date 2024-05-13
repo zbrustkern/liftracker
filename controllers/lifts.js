@@ -46,7 +46,6 @@ router.get('/:liftId/', async (req, res) => {
         res.locals.title = lift.name
         res.render('lifts/show')
     } catch(error) {
-        console.log(error)
         res.locals.title = "My Lifts"
         redirect('lifts/index')
     }

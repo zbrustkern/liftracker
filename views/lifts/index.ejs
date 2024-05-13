@@ -1,6 +1,5 @@
 <%- include('../partials/_header.ejs') %>
-<h1>Welcome to my lifts</h1>
-<main>
+
     <% if (currentUser.lifts.length > 0) { %>
     <ul>
     <% for( let each of currentUser.lifts ) { %>
@@ -14,7 +13,9 @@
     <% } else { %>
     <h3>Do you even lift bro?</h3>
     <% } %>
-<a href="/users/<%= user._id %>/lifts/new">Add a new lift</a>
+<div class="add-link">
+<a href="/users/<%= user._id %>/lifts/new"><button>Add a new lift</button></a>
+</div>
 
 </main>
 </body>
