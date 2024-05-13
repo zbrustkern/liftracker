@@ -20,6 +20,14 @@ router.get('/new', async (req, res) => {
     res.locals.title = "New Workout"
     res.render('workouts/new')
 })
+// New with additional activities
+router.post('/new/:numberOfActivities', async (req, res) => {
+    res.locals.numberOfActivities = Number(req.params.numberOfActivities) + 1
+    res.locals.currentUser = await User.findById(req.session.user._id)
+    res.locals.workout = []
+    res.locals.title = "New Workout"
+    res.render('workouts/new')
+})
 
 //  Create 
 router.post('/', async (req, res) => {

@@ -5,7 +5,7 @@
 <main>
 <form action="/workouts" method="POST">
     <label for="name">Workout Name: </label>
-    <input type="text" name="name" id="name" />
+    <input type="text" name="name" id="name" required/>
     <br>
     <h2>Lifts:</h2>
 
@@ -19,22 +19,21 @@
         </select>
         <br>
         <label for="sets">Sets:</label>
-        <input type="number" name="sets" id="sets1">
+        <input type="number" name="sets" required>
         <br>
         <label for="reps">Reps:</label>
-        <input type="number" name="reps" id="reps1">
+        <input type="number" name="reps" required>
         <br>
         <label for="weight">Percent of training max:</label>
-        <input type="decimal" name="weight" id="weight">
+        <input type="decimal" name="weight" required>
         <br>
         <br>
     </div>
 
     <% } %>
-
-    <button form action="/workouts/new" method="GET" name="newActivity">Add an activity</button>
     <button type="submit">Create Workout</button>
-</form>
+</form><br>
+<form action="/workouts/new/<%= numberOfActivities %>/" method="POST" name="newActivity"><button type="submit">Add an additional activity</button>
 </main>
 </body>
 </html>
