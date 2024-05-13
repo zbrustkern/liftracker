@@ -1,4 +1,9 @@
 <%- include('../partials/_header.ejs') %>
+
+<div class= "index-content">
+    <img src="../assets/front.jpeg" alt="A bent barbell with a T" class="logo-image">
+</div>
+
   <form action="/auth/sign-up" method="POST">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" required />
@@ -17,6 +22,7 @@
     />
     <button type="submit">Sign up</button>
   </form>
+
 </main>
 </body>
 </html>

@@ -1,4 +1,3 @@
-// Need express, router, bcrypt and user
 const express = require('express')
 const router = express.Router()
 const Workout = require('../models/workout.js')
@@ -69,7 +68,6 @@ router.get('/:workoutId/edit', async (req, res) => {
 })
 
 // Update
-
 router.put('/:workoutId', async (req, res) => {
     let currentWorkout = await Workout.findByIdAndUpdate(
         req.params.workoutId,
@@ -94,6 +92,5 @@ router.delete('/:workoutId', async (req, res) => {
         await Workout.findByIdAndDelete(req.params.workoutId)
         res.redirect('/workouts')
 })
-
 
 module.exports = router

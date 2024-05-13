@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
 const liftSchema = new mongoose.Schema({
-  name: {
-  type: String,
-  required: true,
-  },
-    oneRepMax: Number,
-    trainingMax: Number,
-    threeRepMax: Number,
-    fiveRepMax: Number,
+    name: {
+    type: String,
+    required: true,
+    },
+        oneRepMax: Number,
+        trainingMax: Number,
+        threeRepMax: Number,
+        fiveRepMax: Number,
 })
 
 const userSchema = new mongoose.Schema({

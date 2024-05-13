@@ -6,24 +6,23 @@
 
     <h2>Lifts:</h2>
     <% workout.activities.forEach((activity) => { %>
-    <div class="activity-builder">
-        <select name="activities">
-            <% currentUser.lifts.forEach((lift) => { %>
-            <option value="<%= lift.name %>" <%= activity.name === lift.name && "selected" %>><%= lift.name %></option>
-            <% }) %>
-        </select>
-        <br>
-        <label for="sets">Sets:</label>
-        <input type="number" name="sets" value="<%= activity.sets %>">
-        <br>
-        <label for="reps">Reps:</label>
-        <input type="number" name="reps" value="<%= activity.reps %>">
-        <br>
-        <label for="weight">Percent of training max:</label>
-        <input type="decimal" name="weight" value="<%= activity.weight %>">
-        <br>
-        </ul>
-    </div>
+        <div class="activity-builder">
+            <select name="activities">
+                <% currentUser.lifts.forEach((lift) => { %>
+                <option value="<%= lift.name %>" <%= activity.name === lift.name && "selected" %>><%= lift.name %></option>
+                <% }) %>
+            </select>
+            <br>
+            <label for="sets">Sets:</label>
+            <input type="number" name="sets" value="<%= activity.sets %>">
+            <br>
+            <label for="reps">Reps:</label>
+            <input type="number" name="reps" value="<%= activity.reps %>">
+            <br>
+            <label for="weight">Percent of training max:</label>
+            <input type="decimal" name="weight" value="<%= activity.weight %>">
+            <br>
+        </div>
     <% }) %>
     Pro tip: if you want to add additional lifts, create a new workout with the total number you're looking for.
     <button type="submit">Update Workout</button>

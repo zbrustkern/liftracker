@@ -1,12 +1,12 @@
 <nav>
     <a href="/"><img src="../../assets/logo.jpeg" alt="Liftracker" id="home-logo"></a>
     <% if(user) { %>
-    <a href="/workouts">Workouts</a>
-      <a href="/users/<%=user._id%>/lifts">My Lifts</a>
-      <a href="/users/">Community</a>
-      <a href="/auth/sign-out">Sign Out</a>
+        <a href="/workouts">Workouts</a>
+        <a href="/users/<%=user._id%>/lifts">My Lifts</a>
+        <a href="/users/">Community</a>
+        <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>
-      <a href="/auth/sign-in">Sign In</a>
-      <a href="/auth/sign-up">Sign Up</a>
+        <a href="/auth/sign-in">Sign In</a>
+        <a href="/auth/sign-up">Sign Up</a>
     <% } %>
 </nav>

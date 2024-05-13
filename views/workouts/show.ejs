@@ -1,14 +1,14 @@
 <%- include('../partials/_header.ejs') %>
 
-    Today you need to do:
-    <% workout.activities.forEach((activity) => { %>
+<h2>Today you need to do:</h2>
+<% workout.activities.forEach((activity) => { %>
     <div class="lift-display">
-    <%= activity.name %>
-    <p>Sets: <%= activity.sets %></p>
-    <p>Reps: <%= activity.reps %></p>
-    <p>Weight: <%= Math.round(currentUser.lifts.find((lift) => lift.name === activity.name).oneRepMax * 0.009 * activity.weight) %> pounds</p>
+        <%= activity.name %>
+        <p>Sets: <%= activity.sets %></p>
+        <p>Reps: <%= activity.reps %></p>
+        <p>Weight: <%= Math.round(currentUser.lifts.find((lift) => lift.name === activity.name).oneRepMax * 0.009 * activity.weight) %> pounds</p>
     </div>
-    <% }) %>
+<% }) %>
 <a href="/workouts/<%= workout._id %>/edit"><button>Edit this workout</button></a>
 <form action="/workouts/<%= workout._id %>?_method=DELETE" method="POST">
 <button type="submit">Delete</button>

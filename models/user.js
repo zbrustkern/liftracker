@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const liftSchema = new mongoose.Schema({
-  name: {
-  type: String,
-  required: true,
-  },
+    name: {
+    type: String,
+    required: true,
+    },
     oneRepMax: Number,
     trainingMax: Number,
     threeRepMax: Number,
@@ -25,6 +25,6 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     lifts: [liftSchema],
-});
+})
 
 module.exports = mongoose.model('User', userSchema)

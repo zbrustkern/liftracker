@@ -18,7 +18,7 @@ const activitySchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-  });
+  })
 
 const workoutSchema = new mongoose.Schema({
     name: {
@@ -30,6 +30,6 @@ const workoutSchema = new mongoose.Schema({
         ref:'User'
     },
     activities: [activitySchema],
-});
+})
 
 module.exports = mongoose.model('Workout', workoutSchema)

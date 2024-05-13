@@ -6,7 +6,7 @@
 
 nav {
     background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1em);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,12 +33,11 @@ body {
 h1 {
     margin: 2rem 0 4rem 0;
     text-align: center;
-    color: white;
 }
 
 main {
     background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1em);
     width: 75vw;
     margin: 0 auto;
     padding: 2rem 3rem;

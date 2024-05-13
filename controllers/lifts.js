@@ -3,7 +3,6 @@ const router = express.Router()
 const User = require('../models/user.js')
 
 // Index
-
 router.get('/', async (req, res) => {
     res.locals.currentUser = await User.findById(req.session.user._id)
     res.locals.title = "My Lifts"
@@ -11,15 +10,12 @@ router.get('/', async (req, res) => {
 })
 
 // New
-
 router.get('/new', async (req, res) => {
-    // let user = await User.find({username: req.session.user.username})
-    res.locals.title = "My Lifts"
+    res.locals.title = "Add a Lift"
     res.render('lifts/new')
 })
 
 // Create
-
 router.post('/', async (req, res) => {
     try {
     let currentUser = await User.findById(req.session.user._id)
@@ -36,7 +32,6 @@ router.post('/', async (req, res) => {
 })
 
 // Show
-
 router.get('/:liftId/', async (req, res) => {
     try {
         let currentUser = await User.findById(req.session.user._id)
@@ -52,7 +47,6 @@ router.get('/:liftId/', async (req, res) => {
 })
 
 // Edit
-
 router.get('/:liftId/edit', async (req, res) => {
     try {
         let currentUser = await User.findById(req.session.user._id)
@@ -97,7 +91,5 @@ router.delete('/:liftId/', async (req, res) => {
         res.redirect('/lifts/')
     }
 })
-
-
 
 module.exports = router
