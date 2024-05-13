@@ -1,0 +1,19 @@
+<%- include('../partials/_header.ejs') %>
+<h1>Welcome to Workouts!</h1>
+<main>
+    <% if (workouts.length > 0) { %>
+    <ul>
+    <% workouts.forEach((each) => { %>
+        <li>
+            <a href="/workouts/<%=each._id %>"><%= each.name %></a>
+        </li>
+        <br>
+        <br>
+    <% }) %>
+    </ul>
+    <% } else { %>
+    <h3>There are no workouts! I guess it's a rest day.</h3>
+    <% } %>
+<a href="/workouts/new">Add a new workout</a>
+</main>
+</body>

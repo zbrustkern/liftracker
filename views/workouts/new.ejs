@@ -1,0 +1,40 @@
+<%- include('../partials/_header.ejs') %>
+
+<h1>Create a new workout</h1>
+
+<main>
+<form action="/workouts" method="POST">
+    <label for="name">Workout Name: </label>
+    <input type="text" name="name" id="name" />
+    <br>
+    <h2>Lifts:</h2>
+
+    <% for (let i = 0; i < numberOfActivities; i++) { %>
+
+    <div class="activity-builder">
+        <select name="activities" id="activity1">
+            <% currentUser.lifts.forEach((lift)=> { %>
+            <option value="<%= lift.name %>"><%= lift.name %></option>
+            <% }) %>
+        </select>
+        <br>
+        <label for="sets">Sets:</label>
+        <input type="number" name="sets" id="sets1">
+        <br>
+        <label for="reps">Reps:</label>
+        <input type="number" name="reps" id="reps1">
+        <br>
+        <label for="weight">Percent of training max:</label>
+        <input type="decimal" name="weight" id="weight">
+        <br>
+        <br>
+    </div>
+
+    <% } %>
+
+    <button form action="/workouts/new" method="GET" name="newActivity">Add an activity</button>
+    <button type="submit">Create Workout</button>
+</form>
+</main>
+</body>
+</html>

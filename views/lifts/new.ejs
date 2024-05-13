@@ -4,7 +4,7 @@
 <h2>You only need one number to get a computed training max but you can store all of them if available!</h2>
 
 <main>
-<form action="/users/:userId/lifts" method="POST">
+<form action="/users/<%= user._id %>/lifts" method="POST">
     <label for="name">Lift: </label>
     <input type="text" name="name" id="name" />
     <br>

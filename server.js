@@ -13,7 +13,6 @@ const morgan = require("morgan")
 
 // Import Controllers
 const authController = require('./controllers/auth.js')
-const usersController = require('./controllers/users.js')
 const liftsController = require('./controllers/lifts.js')
 const workoutsController = require('./controllers/workouts.js')
 // const activitiessController = require('./controllers/activities.js')
@@ -43,11 +42,9 @@ app.use(session({
         resave: false,
         saveUninitialized: true,
     }))
-
 app.use(passUserToView)
 app.use('/auth', authController)
 app.use(isSignedIn)
-app.use('/users', usersController)
 app.use('/users/:userId/lifts', liftsController)
 app.use('/workouts', workoutsController)
 // app.use('/workouts/activities', activitiesController)

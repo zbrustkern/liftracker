@@ -1,0 +1,21 @@
+<%- include('../partials/_header.ejs') %>
+
+<h1>Cool lift, bro!</h1>
+    Lift: <%= lift.name %><br>
+    One Rep Max: <%= lift.oneRepMax %><br>
+    Three Rep Max: <%= lift.threeRepMax %><br>
+    Five Rep max: <%= lift.fiveRepMax %><br>
+
+    <!-- Delete Button wrapped in a form to send a delete request -->
+    <form action="/users/<%=currentUser._id %>/lifts/<%= lift._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+    <br>
+
+    <a href="/users/<%= currentUser._id %>/lifts/<%= lift._id %>/edit">Edit</a>
+    <br>
+    <a href="/users/<%= currentUser.id %>/lifts">Back to my lifts</a>
+
+
+</body>
+</html>

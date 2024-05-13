@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const User = require('./user.js')
 
 const activitySchema = new mongoose.Schema({
     name: {
@@ -13,6 +14,10 @@ const activitySchema = new mongoose.Schema({
         type: Number,
         required: true,
         },
+    weight: {
+        type: Number,
+        required: true,
+    },
   });
 
 const workoutSchema = new mongoose.Schema({
@@ -20,10 +25,11 @@ const workoutSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    acitivies: [{
+    owner: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Acivitiy'
-    },],
+        ref:'User'
+    },
+    activities: [activitySchema],
 });
 
 module.exports = mongoose.model('Workout', workoutSchema)

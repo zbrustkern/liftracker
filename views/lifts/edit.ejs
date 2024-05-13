@@ -1,0 +1,23 @@
+<%- include('../partials/_header.ejs') %>
+
+<h1>Just smoked that old PR, eh? Congrats!</h1>
+<h2>As a reminder, you need at least ONE value, but can record all three.</h2>
+
+<main>
+<form action="/users/<%=currentUser._id %>/lifts/<%= lift._id %>?_method=PUT" method="POST">
+    <label for="name">Lift: </label>
+    <input type="text" name="name" id="name" value="<%= lift.name %>"/>
+    <br>
+    <label for="one-rep-max">One Rep Max:</label>
+    <input type="number" name="oneRepMax" id="one-rep-max" value="<%= lift.oneRepMax %>">
+    <br>
+    <label for="three-rep-max">Three Rep Max:</label>
+    <input type="number" name="threeRepMax" id="three-rep-max" value="<%= lift.threeRepMax %>">
+    <br>
+    <label for="five-rep-max">Five Rep Max:</label>
+    <input type="number" name="fiveRepMax" id="five-rep-max" value="<%= lift.fiveRepMax %>">
+    <br>
+    <button type="submit">Confirm Lift Update</button>
+
+</form>
+</main>
