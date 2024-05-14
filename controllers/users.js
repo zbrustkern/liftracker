@@ -4,7 +4,6 @@ const User = require('../models/user.js')
 const Workout = require('../models/workout.js')
 
 // Routes
-
 // Index
 router.get('/', async (req, res) => {
      let users = await User.find()

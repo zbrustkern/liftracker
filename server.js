@@ -16,7 +16,6 @@ const authController = require('./controllers/auth.js')
 const usersController = require('./controllers/users.js')
 const liftsController = require('./controllers/lifts.js')
 const workoutsController = require('./controllers/workouts.js')
-// const activitiessController = require('./controllers/activities.js')
 
 // Set up the app and connect to the DB
 const port = process.env.PORT ? process.env.PORT : "3000"
@@ -24,7 +23,6 @@ const app = express()
 app.set('view engine', 'ejs')
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on("connected", () => {
-  console.log(`Connected to MongoDB ${mongoose.connection.name}.`)
 })
 
 // Set up middleware priority stack
@@ -49,7 +47,6 @@ app.use(isSignedIn)
 app.use('/users', usersController)
 app.use('/users/:userId/lifts', liftsController)
 app.use('/workouts', workoutsController)
-// app.use('/workouts/activities', activitiesController)
 
 
 // Home page Index
@@ -61,5 +58,4 @@ app.get("/", async (req, res) => {
 
 // Gotta get here somehow
 app.listen(port, () => {
-    console.log(`The express app is ready on port ${port}!`)
   })

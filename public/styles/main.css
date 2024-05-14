@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 nav {
@@ -12,12 +15,12 @@ nav {
     justify-content: space-around;
 
     a:link {
-        color: steelblue;
+        color: slateblue;
         text-decoration: none;
     }
 
     a:visited {
-        color: steelblue;
+        color: slateblue;
         text-decoration: none;
     }
 
@@ -45,12 +48,12 @@ main {
     color: steelblue;
 
     a:link {
-        color: steelblue;
+        color: slateblue;
         text-decoration: none;
     }
 
     a:visited {
-        color: steelblue;
+        color: slateblue;
         text-decoration: none;
     }
 
@@ -64,7 +67,6 @@ ul {
 }
 
 form {
-    font-family: "DM Sans", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +74,7 @@ form {
   }
 
 .activity-builder {
-    border: 3px solid steelblue;
+    border: 3px solid slateblue;
     backdrop-filter: blur(1em);
     border-radius: 1rem;
     padding: .5rem;
@@ -84,7 +86,7 @@ form {
 }
 
 .lift-display {
-    border: 3px solid steelblue;
+    border: 3px solid slateblue;
     backdrop-filter: blur(1em);
     border-radius: 1rem;
     padding: .5rem;
@@ -98,12 +100,13 @@ form {
 
 button {
     margin: 10px 4px 4px 4px;
-    background-color: #3f6a51;
+    background-color: slateblue;
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
     border: none;
     width: 15em;
+    font-size: large;
   
   &:hover {
     background-color: #597dff;
@@ -122,7 +125,7 @@ button {
     margin: 0 auto;
     border-radius: 1rem;
     h1 {
-      color: steelblue;  
+      color: slateblue;  
     }
 }
 

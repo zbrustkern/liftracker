@@ -42,7 +42,7 @@ router.post('/sign-up', async (req, res) => {
   } catch (error) {
     res.redirect('/')
   }
-});
+})
 
 router.post('/sign-in', async (req, res) => {
   try {
@@ -67,6 +67,6 @@ router.post('/sign-in', async (req, res) => {
   } catch (error) {
     res.redirect('/')
   }
-});
+})
 
 module.exports = router
