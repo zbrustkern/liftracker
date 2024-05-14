@@ -23,7 +23,6 @@ router.get('/:userId', async (req, res) => {
         res.locals.title = `${otherUser.name}'s Workouts`
         res.render('users/show')
      } catch(error) {
-        console.log(error)
         res.redirect('/users')
      }
 })

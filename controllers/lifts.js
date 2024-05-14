@@ -87,7 +87,6 @@ router.delete('/:liftId/', async (req, res) => {
         res.locals.title = "My Lifts"
         res.render('lifts/index')
     } catch (error) {
-        console.log(error)
         res.redirect('/lifts/')
     }
 })
