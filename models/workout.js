@@ -3,8 +3,8 @@ const User = require('./user.js')
 
 const activitySchema = new mongoose.Schema({
     name: {
-    type: String,
-    required: true,
+        type: String,
+        required: true,
     },
     sets:  {
         type: Number,

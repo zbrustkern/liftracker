@@ -1,5 +1,7 @@
 <%- include('../partials/_header.ejs') %>
 
+<% if (currentUser.lifts.length > 0) { %>
+
 <form action="/workouts" method="POST">
     <label for="name"><h2>Workout Name: </h2></label>
     <input type="text" name="name" id="name" required/>
@@ -31,6 +33,12 @@
     <button type="submit">Create Workout</button>
 </form><br>
 <form action="/workouts/new/<%= numberOfActivities %>/" method="POST" name="newActivity"><button type="submit">Add an additional activity</button>
+
+<% } else { %>
+    <h3>Do you even lift bro?</h3>
+    Add some personal lift records first- workouts are catered to your training max weight.
+<% } %>
+
 </main>
 </body>
 </html>

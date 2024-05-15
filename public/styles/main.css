@@ -108,8 +108,8 @@ button {
     width: 15em;
     font-size: large;
   
-  &:hover {
-    background-color: #597dff;
+    &:hover {
+        background-color: red;
   }
 }
 
@@ -125,7 +125,7 @@ button {
     margin: 0 auto;
     border-radius: 1rem;
     h1 {
-      color: slateblue;  
+        color: slateblue;  
     }
 }
 

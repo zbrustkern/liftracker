@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const liftSchema = new mongoose.Schema({
     name: {
-    type: String,
-    required: true,
+        type: String,
+        required: true,
     },
     oneRepMax: Number,
     trainingMax: Number,

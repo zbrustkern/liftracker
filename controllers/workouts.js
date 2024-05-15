@@ -19,6 +19,7 @@ router.get('/new', async (req, res) => {
     res.locals.title = "New Workout"
     res.render('workouts/new')
 })
+
 // New with additional activities
 router.post('/new/:numberOfActivities', async (req, res) => {
     res.locals.numberOfActivities = Number(req.params.numberOfActivities) + 1
@@ -89,8 +90,8 @@ router.put('/:workoutId', async (req, res) => {
 
 // Delete
 router.delete('/:workoutId', async (req, res) => {
-        await Workout.findByIdAndDelete(req.params.workoutId)
-        res.redirect('/workouts')
+    await Workout.findByIdAndDelete(req.params.workoutId)
+    res.redirect('/workouts')
 })
 
 module.exports = router
