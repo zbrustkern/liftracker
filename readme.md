@@ -1,9 +1,9 @@
 # Welcome to LifTracker!
 ## Screenshots
-1. ![A corporate logo for Liftracker on a faded background of a gym.](./assets/screenshotOne.png)
-1. ![A page showing a list of workouts to choose from](./assets/screenshotTwo.png)
-1. ![A [age showing today's Squat workout and the sets and reps needed]](./assets/screenshotOne.png)
-1. ![A page showing an edit form for updating the maximum weights for one's squat.](./assets/screenshotOne.png)
+1. ![A corporate logo for Liftracker on a faded background of a gym.](./public/assets/screenshotOne.png)
+1. ![A page showing a list of workouts to choose from](./public/assets/screenshotTwo.png)
+1. ![A [age showing today's Squat workout and the sets and reps needed]](./public/assets/screenshotOne.png)
+1. ![A page showing an edit form for updating the maximum weights for one's squat.](./public/assets/screenshotOne.png)
 
 
 ## The App
@@ -16,7 +16,7 @@ This app was designed in part to help my wife compute the necessary weights for 
 ## Getting Started
 If you want to dive right in you can [start here.](https://notZeke.com/)
 The original wireframes of the planning process can be found [here](./public/assets/wireframeOne.png), [here](./public/assets/wireframeTwo.png), [and here.](./public/assets/wireframeThree.png)
-Entity Relationship Diagram can be [found here.](./assets/liftracker%20erd.png)
+Entity Relationship Diagram can be [found here.](.public/assets/liftracker%20erd.png)
 Route Tables can be found [here.](./public/assets/Route%20Tables.pdf)
 
 ## Attributions
