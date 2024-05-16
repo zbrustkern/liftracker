@@ -25,7 +25,7 @@ Route Tables can be found [here.](./public/assets/Route%20Tables.pdf)
 Libraries utilized: Mongoose, Express, Node.js, Bcrypt, Dotenv, Express-Sessoin, Method Override, and Morgan.
 
 ## Technologies Used
-This app is an example of a classic MEN stack app primary technologies include:
+This app is an example of a classic MEN stack app primary technologies include:\
 ![MongoDB Badge](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
 )
 ![Express.js bade](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
