@@ -14,7 +14,7 @@ You can see the names of other users' workouts in addition to being able to crea
 This app was designed in part to help my wife compute the necessary weights for programming she's using in real life as it gets tedious to constantly recalculate a fixed percentage of a moving target. It's also something I've spent a lot of time with and can use in my daily life.
 
 ## Getting Started
-If you want to dive right in you can [start here.](https://notZeke.com/)
+If you want to dive right in you can [start here.](https://notZeke.com/) (coming soon).
 The original wireframes of the planning process can be found [here](./public/assets/wireframeOne.png), [here](./public/assets/wireframeTwo.png), [and here.](./public/assets/wireframeThree.png)
 Entity Relationship Diagram can be [found here.](.public/assets/liftracker%20erd.png)
 Route Tables can be found [here.](./public/assets/Route%20Tables.pdf)
@@ -22,18 +22,17 @@ Route Tables can be found [here.](./public/assets/Route%20Tables.pdf)
 ## Attributions
 1. [Google Fonts](https://fonts.google.com/) for the in game typography.
 2. [Google Gemini](https://gemini.google.com/) helped with the concept art, background image, and logos.
+Libraries utilized: Mongoose, Express, Node.js, Bcrypt, Dotenv, Express-Sessoin, Method Override, and Morgan.
 
 ## Technologies Used
 This app is an example of a classic MEN stack app primary libraries include:
 MongoDB
-Mongoose
-Express
+Express.js
 Node.js
-Bcrypt
-Dotenv
-Express-Session
-Method Override
-and Morgan for dev help.
+HTML
+CSS
+Javascript
+
 
 ## Next Steps
 Continued rendering enhancements across devices:
