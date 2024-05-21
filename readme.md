@@ -14,7 +14,7 @@ You can see the names of other users' workouts in addition to being able to crea
 This app was designed in part to help my wife compute the necessary weights for programming she's using in real life as it gets tedious to constantly recalculate a fixed percentage of a moving target. It's also something I've spent a lot of time with and can use in my daily life.
 
 ## Getting Started
-If you want to dive right in you can [start here.](https://notZeke.com/) (coming soon).
+If you want to dive right in you can [start here.](https://liftracker-68f4ba8f13b2.herokuapp.com/).
 The original wireframes of the planning process can be found [here](./public/assets/wireframeOne.png), [here](./public/assets/wireframeTwo.png), [and here.](./public/assets/wireframeThree.png)
 Entity Relationship Diagram can be [found here.](.public/assets/liftracker%20erd.png)
 Route Tables can be found [here.](./public/assets/Route%20Tables.pdf)

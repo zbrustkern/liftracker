@@ -34,7 +34,9 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware for using HTTP verbs such as PUT or DELETE
 app.use(methodOverride("_method"))
 // Morgan for logging HTTP requests
-app.use(morgan('dev'))
+if (process.env.ON_HEROKU === 'false') {
+  app.use(morgan('dev'))
+}
 // Set up session management
 app.use(session({
         secret: process.env.SESSION_SECRET,
