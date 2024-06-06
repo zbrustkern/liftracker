@@ -2,8 +2,8 @@
 ## Screenshots
 1. ![A corporate logo for Liftracker on a faded background of a gym.](./public/assets/screenshotOne.png)
 1. ![A page showing a list of workouts to choose from](./public/assets/screenshotTwo.png)
-1. ![A [age showing today's Squat workout and the sets and reps needed]](./public/assets/screenshotOne.png)
-1. ![A page showing an edit form for updating the maximum weights for one's squat.](./public/assets/screenshotOne.png)
+1. ![A [age showing today's Squat workout and the sets and reps needed]](./public/assets/screenshotThree.png)
+1. ![A page showing an edit form for updating the maximum weights for one's squat.](./public/assets/screenshotFour.png)
 
 
 ## The App
